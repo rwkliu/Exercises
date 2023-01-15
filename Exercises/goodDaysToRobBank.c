@@ -96,6 +96,10 @@ int main() {
   int *result3 = good_days_to_rob_bank(security3, &result_length3, length3, time3);
   printf("result3\n");
   print_list(result3, result_length3); 
+
+  free(result1);
+  free(result2);
+  free(result3);
   
   return 0;
 }
