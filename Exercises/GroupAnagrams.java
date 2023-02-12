@@ -4,6 +4,11 @@ import java.util.Arrays;
 import java.util.Map;
 import java.util.HashMap;
 
+//Time Complexity: O(NKlogK), where N is the length of strs, and K is the max length of a string in
+//strs. The outer loop is O(N) because we're iterating through each string, and sorting each string
+//is O(KlogK) time.
+//Space Complexity: O(NK), the total amount of information stored in output
+
 class GroupAnagrams {                                                                               
   public static void main(String[] args) {                                                          
     String[] strs1 = {"eat","tea","tan","ate","nat","bat"};                                         
