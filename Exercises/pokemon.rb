@@ -6,8 +6,7 @@ PokeApi.get(pokemon: 'pikachu').held_items.each { |held_item| p held_item.item.n
 
 # Print the first 3 moves that Charizard can perform
 p "Charizard's moves"
-PokeApi.get(pokemon: 'charizard').moves.each_with_index do
-  |move, index| 
+PokeApi.get(pokemon: 'charizard').moves.each_with_index do |move, index|
   break if index == 3
   p move.move.name 
 end
@@ -18,8 +17,7 @@ p PokeApi.get(ability: 'air-lock').pokemon[0].pokemon.name
 
 # Print the first 5 pokemon that have the flying type
 p "Flying type pokemon"
-PokeApi.get(type: 'flying').pokemon.each_with_index do
-  |pokemon, index| 
+PokeApi.get(type: 'flying').pokemon.each_with_index do |pokemon, index|
   break if index == 5
   p pokemon.pokemon.name 
 end
