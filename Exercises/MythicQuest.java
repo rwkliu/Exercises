@@ -1,7 +1,5 @@
 // import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.Random;
-import java.util.Arrays;
-import java.util.Collections;
 
 class MythicQuestPlayer {
   int strength;
@@ -30,9 +28,6 @@ class MythicQuestPlayer {
           rolls[i] = random.nextInt(6) + 1;          
       }
       
-      // Sort rolls[] in descending order
-      // Arrays.sort(rolls, Collections.reverseOrder()); 
-      // Get minimum value of rolls
       int min = rolls[0];
       for (int i = 0; i < totalDieRolls; i++) {
         min = Math.min(min, rolls[i]);
