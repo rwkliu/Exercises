@@ -9,3 +9,5 @@ Exercises/enqueue
 Exercises/lsan.supp
 Exercises/enqueue.dSYM/Contents/Resources/DWARF/enqueue
 /Exercises/env1
+/Exercises/flask_htmx/flask-htmx/
+Exercises/flask_htmx/__pycache__/app.cpython-312.pyc
